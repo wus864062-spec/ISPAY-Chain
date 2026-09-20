@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #05085b;
+  --color-gold: #efc62c;
+  --color-whatsapp: #25d366;
+  --color-secondary: #383838;
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: var(--font-inter), sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.bg-topbar {
+  background: linear-gradient(
+    90deg,
+    rgb(5, 5, 33) 0%,
+    rgb(14, 12, 152) 44%,
+    rgb(4, 4, 153) 69%,
+    rgb(9, 29, 178) 100%
+  );
+}
+
+.bg-footer {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(53, 51, 205) 100%,
+    rgb(2, 6, 26) 100%
+  );
+}
+
+.card-3d {
+  transform: perspective(1200px) rotateY(-10deg) rotateX(4deg);
+  filter: drop-shadow(0 28px 40px rgba(5, 8, 91, 0.28));
+}
+
+.hero-swiper .swiper-button-prev,
+.hero-swiper .swiper-button-next {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+}
+
+.hero-swiper .swiper-button-prev::after,
+.hero-swiper .swiper-button-next::after {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  background: #05085b;
+  opacity: 0.3;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #efc62c;
+}
+
+@media (max-width: 767px) {
+  .hero-swiper .swiper-button-prev,
+  .hero-swiper .swiper-button-next {
+    width: 36px;
+    height: 36px;
+  }
+}

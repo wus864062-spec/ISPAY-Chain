@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "ISPAY Chain",
+    "description": "Secure, compliant digital asset infrastructure with smart cards, remittance, and Web3 services."
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "howToJoin": "How to Join",
+    "leadership": "Leadership",
+    "resources": "Resources",
+    "testimonial": "Testimonial",
+    "investmentPlan": "Investment Plan",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "readMore": "read more",
+    "slides": {
+      "black": {
+        "kicker": "ISPAY Black Card",
+        "title": "Experience Smart Payments with the ISPay Black Card",
+        "description": "Secure, fast, and designed for your everyday transactions worldwide."
+      },
+      "white": {
+        "kicker": "ISPAY White Card",
+        "title": "Experience Smart Payments with the ISPay White Card",
+        "description": "Secure, fast, and designed for your everyday transactions worldwide."
+      },
+      "gold": {
+        "kicker": "ISPAY Gold Card",
+        "title": "Experience Smart Payments with the ISPay Gold Card",
+        "description": "Secure, fast, and designed for your everyday transactions worldwide."
+      },
+      "remittance": {
+        "kicker": "ISPAY Global Remittance Card",
+        "title": "Experience Smart Payments with the ISPay Global Remittance Card",
+        "description": "Secure, fast, and designed for your everyday transactions worldwide."
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "ABOUT US",
+    "values": "Integrity | Transparency | Innovation | Execution",
+    "title": "Integrity | Transparency | Innovation | Execution",
+    "intro": "ISPAY was established by early digital asset pioneers and technology specialists. The core leadership team brings experience from global enterprises including Google, Microsoft, Facebook, and other leading technology organizations.",
+    "p1": "ISPAY combines deep engineering capability with proven expertise in building and scaling internet products. Positioned as a foundational blockchain infrastructure provider, ISPAY is committed to delivering secure, compliant, and high-quality digital asset services for users worldwide.",
+    "p2": "Guided by the principle of responsible innovation, ISPAY upholds integrity, fairness, and proactive customer engagement while fostering open collaboration with partners and projects that contribute real value to the global digital economy.",
+    "cta": "read more"
+  },
+  "projects": {
+    "eyebrow": "OUR PROJECTS",
+    "title": "A complete Web3 financial ecosystem",
+    "items": {
+      "blockchain": {
+        "title": "ISPAY Blockchain",
+        "description": "BRC-20: The Fourth Protocol Powering the Future. Institutional grade, fully interoperable and globally adopted. Secure, decentralized and ready to scale your digital assets worldwide."
+      },
+      "exchange": {
+        "title": "ISPAY Exchange",
+        "description": "Provides efficient and compliant fiat and cryptocurrency trading, and pioneered the “coin stock equal rights” model. Bridge between decentralized wallets and centralized accounts."
+      },
+      "wallet": {
+        "title": "ISPAY Decentralized Wallet",
+        "description": "Securely store, manage and transfer assets globally. Complete control at your fingertips. 69 live blockchains including ISPAY Chain. 100+ listed coins."
+      },
+      "social": {
+        "title": "ISPAY Social APP",
+        "description": "One million+ member cities. Mass voice and video broadcasting to 50,000 users. Web3 social finance with full data ownership, rewards, and on-chain interaction."
+      },
+      "remittance": {
+        "title": "ISPAY Global Remittance",
+        "description": "One-click cross-border transfers, real-time settlement, and multi-currency accounts; built on regulated rails with enterprise-grade compliance, risk control, and global reach."
+      },
+      "cards": {
+        "title": "ISPAY Debit Cards",
+        "description": "ISPAY Virtual, White, Gold and Black cards deliver blockchain-enabled security, user-directed control and seamless global spending."
+      },
+      "mall": {
+        "title": "ISPAY Web3 E-commerce mall",
+        "description": "A rapidly scaling merchant ecosystem, starting with 1,000 products and expanding toward 50,000+. Every transaction generates on-chain rewards."
+      },
+      "farming": {
+        "title": "ISPAY Digital Crystal farming Game",
+        "description": "Magic Crystal Farm is a GameFi metaverse ecosystem built on a Play-to-Earn model. Players generate on-chain rewards through digital farming gameplay."
+      }
+    }
+  },
+  "video": {
+    "eyebrow": "DESIGNING THE FUTURE OF SECURE GLOBAL FINANCE",
+    "title": "A Structural Shift in Global Finance",
+    "p1": "Global financial systems are undergoing a structural transformation driven by digital settlement, real-time payments, enhanced transparency, and increased regulatory oversight.",
+    "p2": "Legacy correspondent banking models are increasingly constrained by cost, latency, and fragmentation. Governments and financial institutions worldwide are transitioning toward infrastructure-based digital finance.",
+    "p3": "ISPAY is designed within this global transition."
+  },
+  "footer": {
+    "brand": "ISPAY Chain",
+    "tagline": "ISPAY was established by early digital asset pioneers and technology specialists.",
+    "quickLinks": "Quick Links",
+    "links": "Links",
+    "language": "Language",
+    "bscscan": "BscScan",
+    "pancakeswap": "PancakeSwap",
+    "dexpaprika": "Dexpaprika",
+    "cmc": "CoinMarketCap",
+    "terms": "Terms & Conditions",
+    "copyright": "© 2026. ISPAY Chain All rights reserved"
+  },
+  "whatsapp": {
+    "label": "How can I help you?"
+  },
+  "pages": {
+    "about": {
+      "title": "About ISPAY",
+      "body": "ISPAY is a foundational blockchain infrastructure provider delivering secure, compliant, and high-quality digital asset services for users worldwide."
+    },
+    "howToJoin": {
+      "title": "How to Join",
+      "body": "Create a wallet, connect to the ISPAY ecosystem, and follow the on-chain onboarding steps to participate in cards, remittance, and Web3 services."
+    },
+    "leadership": {
+      "title": "Leadership",
+      "body": "The core leadership team brings experience from global enterprises including Google, Microsoft, Facebook, and other leading technology organizations."
+    },
+    "resources": {
+      "title": "Resources",
+      "body": "Explore documentation, token information, and partner links that support the ISPAY Chain ecosystem."
+    },
+    "testimonial": {
+      "title": "Testimonials",
+      "body": "Users and partners share how ISPAY cards, remittance, and Web3 tools support everyday global payments."
+    },
+    "investmentPlan": {
+      "title": "Investment Plan",
+      "body": "Review ISPAY participation models, ecosystem utilities, and long-term infrastructure plans designed for global digital finance."
+    }
+  }
+}

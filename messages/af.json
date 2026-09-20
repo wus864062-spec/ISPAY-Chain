@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "ISPAY Chain",
+    "description": "Veilige, voldoenende digitale bate-infrastruktuur met slimkaarte, remittering en Web3-dienste."
+  },
+  "header": {
+    "home": "Tuis",
+    "about": "Oor ons",
+    "howToJoin": "Hoe om aan te sluit",
+    "leadership": "Leierskap",
+    "resources": "Hulpbronne",
+    "testimonial": "Getuigskrifte",
+    "investmentPlan": "Beleggingsplan",
+    "openMenu": "Maak kieslys oop",
+    "closeMenu": "Maak kieslys toe"
+  },
+  "hero": {
+    "readMore": "lees meer",
+    "slides": {
+      "black": {
+        "kicker": "ISPAY Swart Kaart",
+        "title": "Ervaar slim betalings met die ISPay Swart Kaart",
+        "description": "Veilig, vinnig en ontwerp vir jou daaglikse transaksies wêreldwyd."
+      },
+      "white": {
+        "kicker": "ISPAY Wit Kaart",
+        "title": "Ervaar slim betalings met die ISPay Wit Kaart",
+        "description": "Veilig, vinnig en ontwerp vir jou daaglikse transaksies wêreldwyd."
+      },
+      "gold": {
+        "kicker": "ISPAY Goue Kaart",
+        "title": "Ervaar slim betalings met die ISPay Goue Kaart",
+        "description": "Veilig, vinnig en ontwerp vir jou daaglikse transaksies wêreldwyd."
+      },
+      "remittance": {
+        "kicker": "ISPAY Globale Remitteringskaart",
+        "title": "Ervaar slim betalings met die ISPay Globale Remitteringskaart",
+        "description": "Veilig, vinnig en ontwerp vir jou daaglikse transaksies wêreldwyd."
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "OOR ONS",
+    "values": "Integriteit | Deursigtigheid | Innovasie | Uitvoering",
+    "title": "Integriteit | Deursigtigheid | Innovasie | Uitvoering",
+    "intro": "ISPAY is gestig deur vroeë digitale-bate pioniers en tegnologie-spesialiste. Die kernleierskapspan bring ervaring van wêreldwye ondernemings soos Google, Microsoft, Facebook en ander toonaangewende tegnologie-organisasies.",
+    "p1": "ISPAY kombineer diep ingenieursvermoë met bewese kundigheid om internetprodukte te bou en te skaal. As 'n fundamentele blockchain-infrastruktuurverskaffer lewer ISPAY veilige, voldoenende en hoëgehalte digitale batedienste vir gebruikers wêreldwyd.",
+    "p2": "Gelei deur verantwoordelike innovasie, handhaaf ISPAY integriteit, billikheid en proaktiewe kliëntediens, terwyl oop samewerking met vennote bevorder word wat werklike waarde tot die globale digitale ekonomie bydra.",
+    "cta": "lees meer"
+  },
+  "projects": {
+    "eyebrow": "ONS PROJEKTE",
+    "title": "'n Volledige Web3-finansiële ekosisteem",
+    "items": {
+      "blockchain": {
+        "title": "ISPAY Blockchain",
+        "description": "BRC-20: Die vierde protokol wat die toekoms aandryf. Institusionele graad, ten volle interoperabel en globaal aanvaar."
+      },
+      "exchange": {
+        "title": "ISPAY Exchange",
+        "description": "Doeltreffende en voldoenende fiat- en kriptohandel, met 'n brug tussen gedesentraliseerde beursies en gesentraliseerde rekeninge."
+      },
+      "wallet": {
+        "title": "ISPAY Gedesentraliseerde Beursie",
+        "description": "Berg, bestuur en dra bates globaal oor. 69 lewendige blockchains insluitend ISPAY Chain. 100+ gelyste munte."
+      },
+      "social": {
+        "title": "ISPAY Sosiale APP",
+        "description": "Web3-sosiale finansies met data-eienaarskap, belonings en on-chain interaksie vir miljoene lede."
+      },
+      "remittance": {
+        "title": "ISPAY Globale Remittering",
+        "description": "Een-klik grensoverschrijdende oordragte, intydse vereffening en multi-geldeenheid rekeninge op gereguleerde relings."
+      },
+      "cards": {
+        "title": "ISPAY Debietkaarte",
+        "description": "Virtuele, Wit, Goue en Swart kaarte lewer blockchain-sekuriteit en naatlose globale besteding."
+      },
+      "mall": {
+        "title": "ISPAY Web3 E-handel mall",
+        "description": "'n Groeiende handelaarsekosisteem van 1,000 tot 50,000+ produkte. Elke transaksie skep on-chain belonings."
+      },
+      "farming": {
+        "title": "ISPAY Digitale Kristal-boerderyspel",
+        "description": "Magic Crystal Farm is 'n GameFi-metaverse met 'n Play-to-Earn-model vir on-chain belonings."
+      }
+    }
+  },
+  "video": {
+    "eyebrow": "ONTWERP DIE TOEKOMS VAN VEILIGE GLOBALE FINANSIES",
+    "title": "'n Strukturele verskuiwing in globale finansies",
+    "p1": "Globale finansiële stelsels ondergaan 'n strukturele transformasie aangedryf deur digitale vereffening, intydse betalings, groter deursigtigheid en strenger toesig.",
+    "p2": "Tradisionele korrespondentbankmodelle word toenemend beperk deur koste, vertraging en fragmentasie. Regerings en instellings beweeg na infrastruktuurgebaseerde digitale finansies.",
+    "p3": "ISPAY is ontwerp binne hierdie wêreldwye oorgang."
+  },
+  "footer": {
+    "brand": "ISPAY Chain",
+    "tagline": "ISPAY is gestig deur vroeë digitale-bate pioniers en tegnologie-spesialiste.",
+    "quickLinks": "Vinnige skakels",
+    "links": "Skakels",
+    "language": "Taal",
+    "bscscan": "BscScan",
+    "pancakeswap": "PancakeSwap",
+    "dexpaprika": "Dexpaprika",
+    "cmc": "CoinMarketCap",
+    "terms": "Bepalings en Voorwaardes",
+    "copyright": "© 2026. ISPAY Chain Alle regte voorbehou"
+  },
+  "whatsapp": {
+    "label": "Hoe kan ek help?"
+  },
+  "pages": {
+    "about": {
+      "title": "Oor ISPAY",
+      "body": "ISPAY is 'n fundamentele blockchain-infrastruktuurverskaffer wat veilige, voldoenende digitale batedienste wêreldwyd lewer."
+    },
+    "howToJoin": {
+      "title": "Hoe om aan te sluit",
+      "body": "Skep 'n beursie, koppel aan die ISPAY-ekosisteem, en volg die on-chain stappe vir kaarte, remittering en Web3-dienste."
+    },
+    "leadership": {
+      "title": "Leierskap",
+      "body": "Die kernleierskapspan bring ervaring van Google, Microsoft, Facebook en ander toonaangewende tegnologie-organisasies."
+    },
+    "resources": {
+      "title": "Hulpbronne",
+      "body": "Verken dokumentasie, tekeninligting en vennootskakels wat die ISPAY Chain-ekosisteem ondersteun."
+    },
+    "testimonial": {
+      "title": "Getuigskrifte",
+      "body": "Gebruikers en vennote deel hoe ISPAY-kaarte, remittering en Web3-nutsgoed daaglikse globale betalings ondersteun."
+    },
+    "investmentPlan": {
+      "title": "Beleggingsplan",
+      "body": "Hersien ISPAY-deelname modelle, ekosisteemnuts en langtermyn infrastruktuurplanne vir globale digitale finansies."
+    }
+  }
+}

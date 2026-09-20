@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "title": "ISPAY Chain",
+    "description": "安全合规的数字资产基础设施，提供智能卡、跨境汇款与 Web3 服务。"
+  },
+  "header": {
+    "home": "首页",
+    "about": "关于",
+    "howToJoin": "如何加入",
+    "leadership": "领导团队",
+    "resources": "资源",
+    "testimonial": "用户评价",
+    "investmentPlan": "投资计划",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单"
+  },
+  "hero": {
+    "readMore": "阅读更多",
+    "slides": {
+      "black": {
+        "kicker": "ISPAY 黑卡",
+        "title": "使用 ISPay 黑卡体验智能支付",
+        "description": "安全、快捷，专为您的全球日常交易而设计。"
+      },
+      "white": {
+        "kicker": "ISPAY 白卡",
+        "title": "使用 ISPay 白卡体验智能支付",
+        "description": "安全、快捷，专为您的全球日常交易而设计。"
+      },
+      "gold": {
+        "kicker": "ISPAY 金卡",
+        "title": "使用 ISPay 金卡体验智能支付",
+        "description": "安全、快捷，专为您的全球日常交易而设计。"
+      },
+      "remittance": {
+        "kicker": "ISPAY 全球汇款卡",
+        "title": "使用 ISPay 全球汇款卡体验智能支付",
+        "description": "安全、快捷，专为您的全球日常交易而设计。"
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "关于我们",
+    "values": "诚信 | 透明 | 创新 | 执行",
+    "title": "诚信 | 透明 | 创新 | 执行",
+    "intro": "ISPAY 由早期数字资产先驱和技术专家创立。核心领导团队来自 Google、Microsoft、Facebook 等全球领先科技企业。",
+    "p1": "ISPAY 将深厚的工程能力与互联网产品规模化经验结合，定位为基础区块链基础设施提供商，致力于为全球用户提供安全、合规、高质量的数字资产服务。",
+    "p2": "在负责任创新原则的指引下，ISPAY 坚持诚信、公平与主动的客户服务，并与真正为全球数字经济创造价值的伙伴和项目开放协作。",
+    "cta": "阅读更多"
+  },
+  "projects": {
+    "eyebrow": "我们的项目",
+    "title": "完整的 Web3 金融生态",
+    "items": {
+      "blockchain": {
+        "title": "ISPAY 区块链",
+        "description": "BRC-20：驱动未来的第四协议。机构级、全面互操作、全球采用。安全去中心化，随时扩展您的数字资产。"
+      },
+      "exchange": {
+        "title": "ISPAY 交易所",
+        "description": "提供高效合规的法币与加密货币交易，开创“币股同权”模式，连接去中心化钱包与中心化账户。"
+      },
+      "wallet": {
+        "title": "ISPAY 去中心化钱包",
+        "description": "安全存储、管理并全球转账。掌控权始终在您手中。支持 69 条链（含 ISPAY Chain）及 100+ 币种。"
+      },
+      "social": {
+        "title": "ISPAY 社交应用",
+        "description": "百万级会员城市。支持向 50,000 用户进行大规模语音与视频广播。Web3 社交金融，数据自主、奖励与链上互动。"
+      },
+      "remittance": {
+        "title": "ISPAY 全球汇款",
+        "description": "一键跨境转账、实时结算与多币种账户；基于合规轨道，具备企业级风控与全球覆盖。"
+      },
+      "cards": {
+        "title": "ISPAY 借记卡",
+        "description": "ISPAY 虚拟卡、白卡、金卡与黑卡提供区块链级安全、用户自主控制与无缝全球消费。"
+      },
+      "mall": {
+        "title": "ISPAY Web3 电商商城",
+        "description": "快速扩张的商户生态，从 1,000 件商品起步，迈向 50,000+。每笔交易都会产生链上奖励。"
+      },
+      "farming": {
+        "title": "ISPAY 数字水晶农场游戏",
+        "description": "Magic Crystal Farm 是基于 Play-to-Earn 的 GameFi 元宇宙。玩家通过数字农耕玩法获得链上奖励。"
+      }
+    }
+  },
+  "video": {
+    "eyebrow": "设计安全全球金融的未来",
+    "title": "全球金融的结构性转变",
+    "p1": "全球金融体系正在经历结构性变革，驱动力来自数字化结算、实时支付、更高透明度与更严格的监管。",
+    "p2": "传统代理银行模式日益受到成本、延迟和碎片化制约。各国政府与金融机构正在转向基于基础设施的数字金融。",
+    "p3": "ISPAY 的设计正值这场全球转型。"
+  },
+  "footer": {
+    "brand": "ISPAY Chain",
+    "tagline": "ISPAY 由早期数字资产先驱和技术专家创立。",
+    "quickLinks": "快速链接",
+    "links": "链接",
+    "language": "语言",
+    "bscscan": "BscScan",
+    "pancakeswap": "PancakeSwap",
+    "dexpaprika": "Dexpaprika",
+    "cmc": "CoinMarketCap",
+    "terms": "条款及细则",
+    "copyright": "© 2026. ISPAY Chain 版权所有"
+  },
+  "whatsapp": {
+    "label": "我怎么帮你？"
+  },
+  "pages": {
+    "about": {
+      "title": "关于 ISPAY",
+      "body": "ISPAY 是基础区块链基础设施提供商，为全球用户提供安全、合规、高质量的数字资产服务。"
+    },
+    "howToJoin": {
+      "title": "如何加入",
+      "body": "创建钱包、连接 ISPAY 生态，并按照链上引导完成开卡、汇款与 Web3 服务接入。"
+    },
+    "leadership": {
+      "title": "领导团队",
+      "body": "核心领导团队拥有来自 Google、Microsoft、Facebook 等全球科技企业的经验。"
+    },
+    "resources": {
+      "title": "资源",
+      "body": "浏览文档、代币信息与合作伙伴链接，了解 ISPAY Chain 生态。"
+    },
+    "testimonial": {
+      "title": "用户评价",
+      "body": "用户与合作伙伴分享 ISPAY 卡片、汇款与 Web3 工具如何支持日常全球支付。"
+    },
+    "investmentPlan": {
+      "title": "投资计划",
+      "body": "了解 ISPAY 参与模式、生态效用与面向全球数字金融的长期基础设施规划。"
+    }
+  }
+}
