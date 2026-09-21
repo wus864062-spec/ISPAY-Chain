@@ -1,0 +1,149 @@
+{
+  "source": "https://ispaychain.io/",
+  "extractedAt": "2026-09-20T11:07:05.386Z",
+  "notes": {
+    "starfield": "不是 Canvas 粒子。首页星空/黑洞效果来自 slider-bg.png + Cover 半透明遮罩。",
+    "gold": "金色主要出现在卡片图片本身；CSS 里最接近的品牌金是表单按钮 #efc62c。",
+    "whatsappIcon": "右下角客服按钮使用 qlwapp 图标字体，不是 FontAwesome。已从页内社交 SVG 提取同等 WhatsApp 图标。"
+  },
+  "fonts": {
+    "body": {
+      "family": "Inter, sans-serif",
+      "weights": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ]
+    },
+    "heading": {
+      "family": "Poppins, sans-serif",
+      "weights": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900
+      ]
+    },
+    "sizes": {
+      "body": "16px",
+      "nav": "16px / 500",
+      "sliderTitle": "42px / 700 / line-height 1.3",
+      "sectionTitle": "32px-35px / 600-700",
+      "button": "16px / 600"
+    }
+  },
+  "colors": {
+    "background": "#05085B",
+    "backgroundAlpha": "#05085BF0",
+    "black": "#000000",
+    "nearBlack": "#101010",
+    "navy": "#050521",
+    "white": "#FFFFFF",
+    "textPrimary": "#000000",
+    "textSecondary": "#383838",
+    "gold": "#EFC62C",
+    "goldAmber": "#FCB900",
+    "whatsapp": "#25D366",
+    "whatsappText": "#FFFFFF",
+    "footerSocial": "#C12122",
+    "overlayWhite90": "rgba(255,255,255,0.90)"
+  },
+  "gradients": {
+    "topbar": "linear-gradient(90deg, rgb(5,5,33) 0%, rgb(14,12,152) 44%, rgb(4,4,153) 69%, rgb(9,29,178) 100%)",
+    "footer": "linear-gradient(90deg, rgb(0,0,0) 0%, rgb(53,51,205) 100%, rgb(2,6,26) 100%)",
+    "footerAlt": "linear-gradient(90deg, rgb(9,9,25) 0%, rgb(53,51,205) 100%)"
+  },
+  "components": {
+    "button": {
+      "radius": "32px",
+      "padding": "8px 28px",
+      "border": "2px solid currentColor",
+      "fontWeight": 600
+    },
+    "whatsappFab": {
+      "background": "#25D366",
+      "color": "#FFFFFF",
+      "radius": "50px",
+      "iconSize": "60px",
+      "fontSize": "18px",
+      "shadow": "rgba(0,0,0,0.06) 0 1px 6px, rgba(0,0,0,0.16) 0 2px 32px",
+      "text": "How can I help you?"
+    },
+    "coverOverlay": {
+      "className": "has-foreground-background-color has-background-dim-90",
+      "color": "#FFFFFF",
+      "opacity": 0.9
+    }
+  },
+  "assets": {
+    "cards": [
+      {
+        "file": "assets/cards/card1.png",
+        "role": "3D card variant 1",
+        "source": "https://ispaychain.io/wp-content/uploads/2026/03/card1.png"
+      },
+      {
+        "file": "assets/cards/card2.png",
+        "role": "3D card variant 2",
+        "source": "https://ispaychain.io/wp-content/uploads/2026/03/card2.png"
+      },
+      {
+        "file": "assets/cards/card3.png",
+        "role": "3D card variant 3",
+        "source": "https://ispaychain.io/wp-content/uploads/2026/03/card3.png"
+      },
+      {
+        "file": "assets/cards/gold-card.jpg",
+        "role": "ISPAY Gold Card",
+        "source": "https://ispaychain.io/wp-content/uploads/2026/03/ispay-Gold-Card-.jpg"
+      },
+      {
+        "file": "assets/cards/white-card.png",
+        "role": "ISPAY White Card",
+        "source": "https://ispaychain.io/wp-content/uploads/2026/03/White.png"
+      },
+      {
+        "file": "assets/cards/virtual-card.png",
+        "role": "ISPAY Virtual Card",
+        "source": "https://ispaychain.io/wp-content/uploads/2026/03/Virtual-Card.png"
+      }
+    ],
+    "backgrounds": [
+      {
+        "file": "assets/backgrounds/slider-bg.png",
+        "role": "Hero starfield / black-hole background",
+        "source": "https://ispaychain.io/wp-content/themes/startup-consultant/assets/images/slider-bg.png"
+      },
+      {
+        "file": "assets/backgrounds/banner-left.png",
+        "role": "About decorative graphic",
+        "source": "https://ispaychain.io/wp-content/themes/startup-consultant/assets/images/banner-left.png"
+      },
+      {
+        "file": "assets/backgrounds/statistic.gif",
+        "role": "Video poster / looping animation",
+        "source": "https://ispaychain.io/wp-content/uploads/2026/03/statistic2-DdFwA18X.gif"
+      }
+    ],
+    "video": {
+      "file": "assets/video/intro.mp4",
+      "poster": "assets/backgrounds/statistic.gif",
+      "source": "https://ispaychain.io/wp-content/uploads/2026/03/intro.mp4",
+      "width": 848,
+      "height": 480,
+      "loop": true,
+      "controls": true
+    }
+  }
+}
