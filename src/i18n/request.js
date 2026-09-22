@@ -15,6 +15,7 @@ export default getRequestConfig(async ({ requestLocale, locale }) => {
 
   return {
     locale: resolved,
-    messages: catalogs[resolved],
+    /* 只有 en/zh/af 有翻译文件，其余语言回退英文内容 */
+    messages: catalogs[resolved] ?? catalogs.en,
   };
 });

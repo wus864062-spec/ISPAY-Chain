@@ -1,4 +1,4 @@
-import InnerPage from "@/components/InnerPage";
+import About from "@/components/pages/About";
 import { routing } from "@/i18n/routing";
 import { setRequestLocale } from "next-intl/server";
 
@@ -9,5 +9,5 @@ export function generateStaticParams() {
 export default async function AboutPage({ params }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <InnerPage pageKey="about" />;
+  return <About />;
 }

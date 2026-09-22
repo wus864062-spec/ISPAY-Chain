@@ -4,6 +4,7 @@
     "description": "Veilige, voldoenende digitale bate-infrastruktuur met slimkaarte, remittering en Web3-dienste."
   },
   "header": {
+    "brand": "ISPAY Chain",
     "home": "Tuis",
     "about": "Oor ons",
     "howToJoin": "Hoe om aan te sluit",
@@ -49,40 +50,48 @@
     "cta": "lees meer"
   },
   "projects": {
-    "eyebrow": "ONS PROJEKTE",
-    "title": "'n Volledige Web3-finansiële ekosisteem",
+    "eyebrow": "",
+    "title": "Ons Projekte",
     "items": {
       "blockchain": {
         "title": "ISPAY Blockchain",
-        "description": "BRC-20: Die vierde protokol wat die toekoms aandryf. Institusionele graad, ten volle interoperabel en globaal aanvaar."
+        "subtitle": "BRC-20: Die vierde protokol, lei die toekoms",
+        "description": "Institusionele graad, ten volle interoperabel, globaal universeel. Veilig, gedesentraliseerd, bemagtig jou om digitale bates wêreldwyd te skaal."
       },
       "exchange": {
         "title": "ISPAY Exchange",
-        "description": "Doeltreffende en voldoenende fiat- en kriptohandel, met 'n brug tussen gedesentraliseerde beursies en gesentraliseerde rekeninge."
+        "subtitle": "Doeltreffende en voldoenende fiat- en kriptohandel, en het die \"munt-munt-gelyke regte\"-model baanbrekend gemaak.",
+        "description": "Brug tussen gedesentraliseerde beursies en gesentraliseerde rekeninge vir naatlose, veilige en globale handel."
       },
       "wallet": {
         "title": "ISPAY Gedesentraliseerde Beursie",
-        "description": "Berg, bestuur en dra bates globaal oor. 69 lewendige blockchains insluitend ISPAY Chain. 100+ gelyste munte."
+        "subtitle": "Jou gedesentraliseerde digitale beursie",
+        "description": "Berg, bestuur en dra bates globaal oor. Volle beheer op jou vingerpunte. 69 lewendige blockchains insluitend ISPAY Chain. 100+ gelyste munte. Ruilbrug soos BEP20 na TRC20."
       },
       "social": {
         "title": "ISPAY Sosiale APP",
-        "description": "Web3-sosiale finansies met data-eienaarskap, belonings en on-chain interaksie vir miljoene lede."
+        "subtitle": "Een miljoen + lede stede. Massa stem- en video-uitsendings aan 50,000 gebruikers.",
+        "description": "Web3-sosiale finansies met volle data-eienaarskap, belonings en on-chain interaksie."
       },
       "remittance": {
         "title": "ISPAY Globale Remittering",
-        "description": "Een-klik grensoverschrijdende oordragte, intydse vereffening en multi-geldeenheid rekeninge op gereguleerde relings."
+        "subtitle": "Een-klik grensoverschrijdende oordragte, intydse vereffening en multi-geldeenheid rekening",
+        "description": "gebou op gereguleerde relings met ondernemingsgraad-voldoening, risikobeheer en globaal bereik."
       },
       "cards": {
         "title": "ISPAY Debietkaarte",
-        "description": "Virtuele, Wit, Goue en Swart kaarte lewer blockchain-sekuriteit en naatlose globale besteding."
+        "subtitle": "ISPAY Virtuele, Wit, Goue en Swart kaarte",
+        "description": "lewer blockchain-geaktiveerde sekuriteit, gebruikersgerigte beheer en naatlose globale besteding; waar jou data, toegang en finansiële gesag in jou hande bly."
       },
       "mall": {
-        "title": "ISPAY Web3 E-handel mall",
-        "description": "'n Groeiende handelaarsekosisteem van 1,000 tot 50,000+ produkte. Elke transaksie skep on-chain belonings."
+        "title": "ISPAY Web3",
+        "subtitle": "E-handel mall",
+        "description": "Toegang tot 'n vinnig groeiende handelaar- en vervaardigersekosisteem, begin met 1,000 produkte en brei uit na 50,000+ oor huis, elektronika, leefstyl en noodsaaklike kategorieë. Elke transaksie skep on-chain belonings. Elke handelaar word deel van 'n gedesentraliseerde, interoperabele handelsekonomie."
       },
       "farming": {
         "title": "ISPAY Digitale Kristal-boerderyspel",
-        "description": "Magic Crystal Farm is 'n GameFi-metaverse met 'n Play-to-Earn-model vir on-chain belonings."
+        "subtitle": "Magic Crystal Farm",
+        "description": "is 'n GameFi-metaverse-ekosisteem gebou op 'n Play-to-Earn deelnamemodel. Spelers interaksie met die platform deur digitale boerderyspel om on-chain belonings en ekosisteem nut te genereer."
       }
     }
   },
@@ -111,28 +120,138 @@
   },
   "pages": {
     "about": {
-      "title": "Oor ISPAY",
-      "body": "ISPAY is 'n fundamentele blockchain-infrastruktuurverskaffer wat veilige, voldoenende digitale batedienste wêreldwyd lewer."
+      "bannerTitle": "About Us",
+      "goalsTitle": "About Us",
+      "goalsIntro": "The main objectives of the ISPAY program are to:",
+      "g1": "Establish secure domestic and cross-border payment infrastructure;",
+      "g2": "Enable regulated digital banking and card-based financial services;",
+      "g3": "Provide transparent, auditable blockchain-based settlement mechanisms;",
+      "g4": "Support interoperable financial systems compatible with existing banks;",
+      "g5": "Expand financial inclusion at the population and enterprise levels;",
+      "g6": "Preserve monetary sovereignty and regulatory control.",
+      "principlesTitle": "Core Principles",
+      "principlesIntro": "The ISPAY program adheres to the following principles:",
+      "p1": "Integrity: transparent and auditable financial operations;",
+      "p2": "Compliance: compliance with national laws and regulations;",
+      "p3": "Security: institutional-grade encryption and operational safeguards;",
+      "p4": "Scalability: capacity to support national and regional development;",
+      "p5": "Sovereignty: full national autonomy over deployment and oversight.",
+      "visionTitle": "Vision",
+      "visionText": "To build a borderless financial future where decentralized technology meets real-world utility.",
+      "missionTitle": "Mission",
+      "missionText": "To build compliant Web3 infrastructure connecting blockchains, assets, and people, enabling global participation in a unified digital economy.",
+      "remittanceTitle": "ISPAY Global Remittance",
+      "remittanceSubtitle": "Technical Brief: A hybrid decentralized infrastructure for regulated, high-volume cross-border payments",
+      "overviewTitle": "Overview",
+      "overviewText": "The ISPAY Global Remittance system is built as a hybrid decentralized system that combines the interoperability of public blockchains with permissioned execution and governance layers, enabling high-volume, low-latency cross-border payments while maintaining regulatory control and operational reliability.",
+      "flawsIntro": "The architecture avoids two common flaws of remittance systems:",
+      "flaw1": "Fully centralized systems lack transparency and resilience;",
+      "flaw2": "Fully permissionless systems lack compliance, governance, and deterministic control."
     },
     "howToJoin": {
-      "title": "Hoe om aan te sluit",
-      "body": "Skep 'n beursie, koppel aan die ISPAY-ekosisteem, en volg die on-chain stappe vir kaarte, remittering en Web3-dienste."
+      "bannerTitle": "How to Join",
+      "introTitle": "Join ISPAY to unlock seamless payment solutions",
+      "s2Title": "Step 1: Download the TokenPocket Wallet",
+      "s2Text": "Token Pocket Android download (Play Store): https://play.google.com/store/apps/details?id=vip.mytokenpocket TokenPocket iOS download (App Store): https://apps.apple.com/in/app/tokenpocket-crypto-bitcoin/id6444625622",
+      "s3Title": "TokenPocket Display",
+      "s3Text": "",
+      "s4Title": "Step 2. Select your BNB Chain network",
+      "s4Text": "",
+      "s5Title": "Step 3: Create your wallet",
+      "s5Text": "",
+      "s6Title": "Step 4: Select \"Create Wallet\"",
+      "s6Text": "",
+      "s7Title": "Step 5: Set a password",
+      "s7Text": "",
+      "s8Title": "Step 6. Select all options and tap \"Generate Mnemonic\"",
+      "s8Text": "",
+      "s9Title": "Step 7: Save your secret recovery phrase",
+      "s9Text": "",
+      "s10Title": "Step 8. Wallet created successfully",
+      "s10Text": "",
+      "s11Title": "How to open ISPAY products in the TokenPocket browser",
+      "s11Text": "",
+      "s12Title": "How to access the ISPAY Card dashboard",
+      "s12Text": "ISPAY Card dashboard link www.ispaychain.com/?code=0x64b4Fcf5190Bbd48eB017c58B8a3091ab66F6281",
+      "s13Title": "How to access the ISPAY Card dashboard",
+      "s13Text": "",
+      "s14Title": "How to access your ISPAY Card dashboard",
+      "s14Text": "",
+      "s15Title": "ISPAY Global Digital Card creation dashboard",
+      "s15Text": "",
+      "s16Title": "How to transfer funds to your ISPAY Card",
+      "s16Text": "",
+      "s17Title": "ISPAY Card dashboard",
+      "s17Text": "",
+      "s18Title": "How to access the ISPAY Digital E-commerce Mall dashboard",
+      "s18Text": "ISPAY Mall dashboard link https://mall.ispay.club/h5/#/?address=0xbc1a532895a65c8a5114294349342461f0eb65fb",
+      "s19Title": "How to access the ISPAY Digital E-commerce Mall dashboard",
+      "s19Text": "",
+      "s20Title": "ISPAY Mall dashboard",
+      "s20Text": "",
+      "s21Title": "Explore the ISPAY ecosystem",
+      "s21Text": "",
+      "s22Title": "ISPAY ecosystem product identifiers",
+      "s22Text": "",
+      "s23Title": "How to access the ISPAY Web3 E-commerce Mall",
+      "s23Text": "After entering the ISPAY Mall, all products are organized by category. Click any category to browse all products. Select the product you want and click \"Buy Now\" to complete your order. Shipping address",
+      "s24Title": "After entering the ISPAY Mall, all products are organized by category. Click any category to browse all products.",
+      "s24Text": "",
+      "s25Title": "Select the product you want and click \"Buy Now\" to complete your order.",
+      "s25Text": "",
+      "s26Title": "Shipping address",
+      "s26Text": "",
+      "s27Title": "How to access the ISPAY Digital Crystal Farm (Game)",
+      "s27Text": "",
+      "s28Title": "How to access the ISPAY Digital Crystal Farm (Game)",
+      "s28Text": "",
+      "s29Title": "ISPAY Digital Crystal Farm (Game) platform",
+      "s29Text": "",
+      "otherLinksTitle": "Other Links",
+      "ol1": "1- ISPay Blockchain",
+      "ol2": "2- ISPay Exchange download link",
+      "ol3": "3 – ISPAY Wallet download link",
+      "ol4": "4 – Social app download link",
+      "ol5": "5 – ISPAY Global Remittance link",
+      "ol6": "6 – ISPAY Staking link"
     },
     "leadership": {
-      "title": "Leierskap",
-      "body": "Die kernleierskapspan bring ervaring van Google, Microsoft, Facebook en ander toonaangewende tegnologie-organisasies."
+      "bannerTitle": "Leadership",
+      "heading": "Meet the leaders behind our success",
+      "name": "Marcel Velez (ISPAY President)",
+      "p1": "BRC-20, the world's fourth-largest protocol, is not just a technical milestone — it is the cornerstone of a global financial revolution. ISPay is building the world's first protocol-level interoperable ecosystem, enabling digital assets to move securely, transparently, and at scale across blockchains. This is mission-critical infrastructure designed for real-world use, with institutional-grade reliability and global reach. Today we serve 7 million users, on our way to 20 million, and growing under my leadership.",
+      "p2": "Under my leadership, ISPay reaches every corner of the world, aiming to empower 20 million users in the near future and to build a financial ecosystem that transcends borders, cultures, and languages. From Asia to the Americas, from Europe to Africa, we are making decentralized, empowering financial tools universal, turning user participation into real value.",
+      "p3": "At ISPay, our leadership team are pioneers. We launched the world's first ISPay token swap platform, enabling truly decentralized multi-chain native trading; we also launched the first ISPay on-chain mall, perfectly blending commerce and finance, with every transaction delivering full cashback, rewards, and meaningful financial participation.",
+      "p4": "From ISPay Social (with over a million member communities and cities) to ISPay Wallet, Exchange, Games, and Mining, every product embodies our mission: empowering individuals, supporting businesses, and reshaping global finance.",
+      "p5": "This is not just innovation — it is a movement reshaping how the world interacts with value, governance, and opportunity. ISPay turns everyday actions, social interactions, commerce, gaming, and financial participation into real on-chain impact. We do not wait for the future — we are the rails of the future, moving forward together, unstoppable.",
+      "p6": "Our ISPay token is fully decentralized and compliant, powering this ecosystem and turning social, financial, and commercial activity into measurable impact."
     },
     "resources": {
-      "title": "Hulpbronne",
-      "body": "Verken dokumentasie, tekeninligting en vennootskakels wat die ISPAY Chain-ekosisteem ondersteun."
+      "bannerTitle": "Resources",
+      "pitchTitle": "Download the ISPAY Pitch Deck file",
+      "infraTitle": "ISPAY Global-Scale Financial Infrastructure download",
+      "farmTitle": "Magical Crystal Farm updated download",
+      "whitepaperTitle": "ISPAY Chain White Paper updated download",
+      "download": "Download"
     },
     "testimonial": {
-      "title": "Getuigskrifte",
-      "body": "Gebruikers en vennote deel hoe ISPAY-kaarte, remittering en Web3-nutsgoed daaglikse globale betalings ondersteun."
+      "bannerTitle": "Testimonials",
+      "heading": "Client Testimonials",
+      "t1Title": "ISPAY Digital Payments",
+      "t2Title": "ISPAY Games: How to Play",
+      "t3Title": "ISPAY Virtual Card Process",
+      "t4Title": "Withdraw cash with the ISPAY Card"
     },
     "investmentPlan": {
-      "title": "Beleggingsplan",
-      "body": "Hersien ISPAY-deelname modelle, ekosisteemnuts en langtermyn infrastruktuurplanne vir globale digitale finansies."
+      "bannerTitle": "Investment Plan",
+      "heading": "Investment Plan",
+      "i1Title": "Virtual Card income levels",
+      "i2Title": "White Card income levels",
+      "i3Title": "Gold Card income levels",
+      "i4Title": "Black Card income levels",
+      "i5Title": "Pre-sale – Phase 2",
+      "i6Title": "ISPAY Mall franchise model",
+      "i7Title": "Game income plan"
     }
   }
 }

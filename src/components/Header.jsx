@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { contact, navItems, socials } from "@/data/site";
@@ -10,95 +10,120 @@ import SocialIcon from "./SocialIcon";
 
 export default function Header() {
   const t = useTranslations("header");
-  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  /* 目录打开时锁定背景滚动 */
+  useEffect(() => {
+    if (!menuOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") setMenuOpen(false);
+    };
+    document.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = prev;
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [menuOpen]);
 
   return (
-    <header className="sticky top-0 z-40 bg-white shadow-sm">
-      <div className="bg-topbar text-white">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 py-3 text-sm sm:flex-row">
-          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1">
-            <a href={`mailto:${contact.email}`} className="hover:text-gold">
-              {contact.email}
-            </a>
-            <a href={contact.phoneHref} className="hover:text-gold">
-              {contact.phone}
-            </a>
-          </div>
-          <div className="flex items-center gap-3">
+    <header className="relative z-40 bg-white shadow-sm">
+      {/* topbar - 原始网站 wow fadeInDown */}
+      <div data-wow="fadeInDown" className="relative bg-topbar text-white">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-2 px-4 py-3 pr-4 text-center text-sm sm:text-base md:flex-row md:justify-between md:gap-4 md:pr-44 md:text-left">
+          <a href={`mailto:${contact.email}`} className="md:flex-1 hover:text-gold">
+            {contact.email}
+          </a>
+          <a href={contact.phoneHref} className="md:flex-1 md:text-center hover:text-gold">
+            {contact.phone}
+          </a>
+          <div className="flex items-center justify-center gap-3 pt-1 md:flex-1 md:justify-end md:pt-0">
             {socials.map((item) => (
               <a
                 key={item.id}
                 href={item.href}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full p-1 transition hover:text-gold"
+                className="transition hover:text-gold"
                 aria-label={item.id}
               >
-                <SocialIcon name={item.id} />
+                <SocialIcon name={item.id} className="h-5 w-5 sm:h-[22px] sm:w-[22px]" />
               </a>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4">
-        <Link href="/" className="flex items-center gap-3">
+      {/* 语言切换器：钉屏模式，固定在屏幕右上角，滚动时始终可见（必须放在带 data-wow 动画的顶栏外，否则 will-change/transform 会让 fixed 失效跟随页面滚动） */}
+      <div style={{ position: "fixed", top: "8px", right: "16px", zIndex: 50 }}>
+        <LanguageSwitcher />
+      </div>
+
+      {/* menu-header - 原始网站 wow fadeInDown */}
+      <div data-wow="fadeInDown" data-delay="150" className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 pt-8 pb-10 lg:flex-row lg:justify-between lg:gap-6 lg:py-5">
+        <Link href="/" className="flex items-center gap-10 sm:gap-3">
           <Image
             src="/images/brand/logo.png"
-            alt="ISPAY Chain"
-            width={56}
-            height={56}
-            className="h-14 w-14 rounded-full object-cover"
+            alt={t("brand")}
+            width={88}
+            height={88}
+            className="h-[88px] w-[88px] rounded-full object-cover lg:h-[72px] lg:w-[72px]"
             priority
           />
-          <span className="font-heading text-xl font-bold text-black sm:text-[26px]">
-            ISPAY Chain
+          <span className="font-heading text-[28px] font-bold text-black">
+            {t("brand")}
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-5 text-[15px] font-medium capitalize lg:flex">
+        <nav className="hidden flex-wrap items-center justify-center gap-x-3 gap-y-2 text-[13px] font-semibold text-black sm:gap-x-5 sm:text-[15px] lg:flex lg:text-base">
           {navItems.map((item) => (
-            <Link key={item.key} href={item.href} className="text-slate-800 hover:text-navy">
+            <Link key={item.key} href={item.href} className="hover:text-navy">
               {t(item.key)}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden lg:block">
-          <LanguageSwitcher />
-        </div>
-
+        {/* 移动端目录按钮：原始网站缩小后显示 "="（两条横线），点击打开全屏目录 */}
         <button
           type="button"
-          className="rounded-md border border-slate-200 p-2 lg:hidden"
-          onClick={() => setOpen((value) => !value)}
-          aria-label={open ? t("closeMenu") : t("openMenu")}
+          onClick={() => setMenuOpen(true)}
+          aria-label={t("openMenu")}
+          aria-expanded={menuOpen}
+          className="flex flex-col items-center justify-center gap-[10px] p-2 lg:hidden"
         >
-          <span className="block h-0.5 w-5 bg-black" />
-          <span className="mt-1 block h-0.5 w-5 bg-black" />
-          <span className="mt-1 block h-0.5 w-5 bg-black" />
+          <span className="block h-[2px] w-7 bg-black" />
+          <span className="block h-[2px] w-7 bg-black" />
         </button>
       </div>
 
-      {open ? (
-        <div className="border-t border-slate-100 bg-white px-4 py-4 lg:hidden">
-          <nav className="flex flex-col gap-3 text-base font-medium">
+      {/* 移动端全屏目录：点击 = 打开，点击 ✕ 或链接后关闭（与原始网站一致；z-40 低于语言切换器 z-50，切换器保持可见） */}
+      {menuOpen && (
+        <div className="fixed inset-0 z-40 overflow-y-auto bg-white lg:hidden">
+          <button
+            type="button"
+            onClick={() => setMenuOpen(false)}
+            aria-label={t("closeMenu")}
+            className="absolute right-6 top-8 p-2 text-black"
+          >
+            <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
+              <path d="M5 5l14 14M19 5L5 19" stroke="currentColor" strokeWidth="1.5" fill="none" />
+            </svg>
+          </button>
+          <nav className="flex flex-col items-start gap-[22px] px-8 pt-24 pb-10 text-lg font-semibold text-black">
             {navItems.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}
-                className="py-1"
-                onClick={() => setOpen(false)}
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-navy"
               >
                 {t(item.key)}
               </Link>
             ))}
           </nav>
-          <div className="mt-4">
-            <LanguageSwitcher />
-          </div>
         </div>
-      ) : null}
+      )}
     </header>
   );
 }

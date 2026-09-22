@@ -4,10 +4,11 @@
     "description": "安全合规的数字资产基础设施，提供智能卡、跨境汇款与 Web3 服务。"
   },
   "header": {
-    "home": "首页",
+    "brand": "ISPAY 连锁",
+    "home": "家",
     "about": "关于",
     "howToJoin": "如何加入",
-    "leadership": "领导团队",
+    "leadership": "领导",
     "resources": "资源",
     "testimonial": "用户评价",
     "investmentPlan": "投资计划",
@@ -43,46 +44,54 @@
     "eyebrow": "关于我们",
     "values": "诚信 | 透明 | 创新 | 执行",
     "title": "诚信 | 透明 | 创新 | 执行",
-    "intro": "ISPAY 由早期数字资产先驱和技术专家创立。核心领导团队来自 Google、Microsoft、Facebook 等全球领先科技企业。",
-    "p1": "ISPAY 将深厚的工程能力与互联网产品规模化经验结合，定位为基础区块链基础设施提供商，致力于为全球用户提供安全、合规、高质量的数字资产服务。",
-    "p2": "在负责任创新原则的指引下，ISPAY 坚持诚信、公平与主动的客户服务，并与真正为全球数字经济创造价值的伙伴和项目开放协作。",
+    "intro": "ISPAY由早期数字资产先驱和技术专家创立。其核心领导团队拥有来自谷歌、微软、Facebook等全球领先科技企业的丰富经验。",
+    "p1": "ISPAY 拥有深厚的工程技术实力和在构建及扩展互联网产品方面久经考验的专业知识。作为一家基础区块链基础设施提供商，ISPAY 致力于为全球用户提供安全、合规且高质量的数字资产服务。",
+    "p2": "秉持负责任的创新原则，ISPAY 坚持诚信、公平和积极的客户互动，同时与合作伙伴和项目开展开放合作，为全球数字经济创造真正的价值。",
     "cta": "阅读更多"
   },
   "projects": {
-    "eyebrow": "我们的项目",
-    "title": "完整的 Web3 金融生态",
+    "eyebrow": "",
+    "title": "我们的项目",
     "items": {
       "blockchain": {
         "title": "ISPAY 区块链",
-        "description": "BRC-20：驱动未来的第四协议。机构级、全面互操作、全球采用。安全去中心化，随时扩展您的数字资产。"
+        "subtitle": "BRC-20：第四协议，引领未来",
+        "description": "机构级标准，完全互操作，全球通用。安全、去中心化，助力您在全球范围内扩展数字资产。"
       },
       "exchange": {
         "title": "ISPAY 交易所",
-        "description": "提供高效合规的法币与加密货币交易，开创“币股同权”模式，连接去中心化钱包与中心化账户。"
+        "subtitle": "提供高效合规的法币和加密货币交易，并率先采用“币币平等权益”权益模式。",
+        "description": "连接去中心化钱包和中心化账户，实现无缝、安全、全球交易。"
       },
       "wallet": {
         "title": "ISPAY 去中心化钱包",
-        "description": "安全存储、管理并全球转账。掌控权始终在您手中。支持 69 条链（含 ISPAY Chain）及 100+ 币种。"
+        "subtitle": "您的去中心化数字钱包",
+        "description": "安全地在全球范围内存储、管理和转移资产。一切尽在掌控。支持69 条实时区块链，包括 ISPAY Chain。上线 100 多种加密货币。支持 BEP20 到 TRC20 等代币兑换桥。"
       },
       "social": {
         "title": "ISPAY 社交应用",
-        "description": "百万级会员城市。支持向 50,000 用户进行大规模语音与视频广播。Web3 社交金融，数据自主、奖励与链上互动。"
+        "subtitle": "",
+        "description": "超过一百万个成员城市。面向五万用户的大规模语音和视频广播。具有完全数据所有权、奖励和链上互动功能的Web3社交金融。"
       },
       "remittance": {
         "title": "ISPAY 全球汇款",
-        "description": "一键跨境转账、实时结算与多币种账户；基于合规轨道，具备企业级风控与全球覆盖。"
+        "subtitle": "",
+        "description": "一键跨境转账、实时结算和多币种账户；建立在受监管的轨道上，具备企业级合规性、风险控制和全球覆盖范围。"
       },
       "cards": {
         "title": "ISPAY 借记卡",
-        "description": "ISPAY 虚拟卡、白卡、金卡与黑卡提供区块链级安全、用户自主控制与无缝全球消费。"
+        "subtitle": "",
+        "description": "ISPAY 虚拟卡、白卡、金卡和黑卡提供区块链技术带来的安全保障、用户自主控制和无缝全球消费；您的数据、访问权限和财务权力始终掌握在您手中。"
       },
       "mall": {
-        "title": "ISPAY Web3 电商商城",
-        "description": "快速扩张的商户生态，从 1,000 件商品起步，迈向 50,000+。每笔交易都会产生链上奖励。"
+        "title": "ISPAY Web3<br/>电子商务商城",
+        "subtitle": "",
+        "description": "加入快速扩张的商家和制造生态系统，产品种类从 1000 种起步，逐步扩展到家居、电子产品、生活方式和生活必需品等品类的 5 万多种。每笔交易都会产生链上奖励。每位商家都将成为去中心化、可互操作的商业经济的一部分。"
       },
       "farming": {
         "title": "ISPAY 数字水晶农场游戏",
-        "description": "Magic Crystal Farm 是基于 Play-to-Earn 的 GameFi 元宇宙。玩家通过数字农耕玩法获得链上奖励。"
+        "subtitle": "",
+        "description": "Magic Crystal Farm 是一个基于 GameFi 的元宇宙生态系统，采用“边玩边赚”的参与模式。玩家通过数字农场游戏与平台互动，从而获得链上奖励和生态系统效用。"
       }
     }
   },
@@ -90,11 +99,11 @@
     "eyebrow": "设计安全全球金融的未来",
     "title": "全球金融的结构性转变",
     "p1": "全球金融体系正在经历结构性变革，驱动力来自数字化结算、实时支付、更高透明度与更严格的监管。",
-    "p2": "传统代理银行模式日益受到成本、延迟和碎片化制约。各国政府与金融机构正在转向基于基础设施的数字金融。",
+    "p2": "传统代理银行模式日益受到成本、延迟和碎片化制约。各国政府与金融机构正在转向基于基础设施的数字金融，而非依赖机构的中介模式。",
     "p3": "ISPAY 的设计正值这场全球转型。"
   },
   "footer": {
-    "brand": "ISPAY Chain",
+    "brand": "ISPAY 连锁",
     "tagline": "ISPAY 由早期数字资产先驱和技术专家创立。",
     "quickLinks": "快速链接",
     "links": "链接",
@@ -111,28 +120,138 @@
   },
   "pages": {
     "about": {
-      "title": "关于 ISPAY",
-      "body": "ISPAY 是基础区块链基础设施提供商，为全球用户提供安全、合规、高质量的数字资产服务。"
+      "bannerTitle": "关于我们",
+      "goalsTitle": "关于我们",
+      "goalsIntro": "ISPAY计划的目标主要包括：",
+      "g1": "建立安全的国内和跨境支付基础设施；",
+      "g2": "实现受监管的数字银行和基于卡的金融服务；",
+      "g3": "提供透明、可审计的基于区块链的结算机制；",
+      "g4": "支持与现有银行兼容的互操作金融系统；",
+      "g5": "在人口和企业层面扩大金融普惠；",
+      "g6": "维护货币主权和监管控制。",
+      "principlesTitle": "核心原则",
+      "principlesIntro": "ISPAY计划遵循以下原则：",
+      "p1": "诚信：透明且可审计的财务运营；",
+      "p2": "合规：符合国家法律法规要求；",
+      "p3": "安全：机构级加密和运营保障；",
+      "p4": "可扩展性：支持国家和地区发展的能力；",
+      "p5": "主权：国家对部署和监督拥有完全的自主权。",
+      "visionTitle": "想象",
+      "visionText": "打造一个无国界的金融未来，让去中心化技术与现实世界的实用性相结合。",
+      "missionTitle": "使命",
+      "missionText": "构建符合规范的 Web3 基础设施，连接区块链、资产和人员，从而实现全球参与统一的数字经济。",
+      "remittanceTitle": "ISPAY全球汇款",
+      "remittanceSubtitle": "技术简报：面向受监管、大批量跨境支付的混合去中心化基础设施",
+      "overviewTitle": "概述",
+      "overviewText": "ISPAY 全球汇款系统构建为一个混合去中心化系统，它结合了公有区块链的互操作性以及许可执行和治理层，从而在保持监管控制和运营可靠性的同时，实现大批量、低延迟的跨境支付。",
+      "flawsIntro": "该架构避免了汇款系统常见的两个缺陷：",
+      "flaw1": "完全中心化系统缺乏透明度和弹性；",
+      "flaw2": "完全无需许可的系统缺乏合规性、治理和确定性控制。"
     },
     "howToJoin": {
-      "title": "如何加入",
-      "body": "创建钱包、连接 ISPAY 生态，并按照链上引导完成开卡、汇款与 Web3 服务接入。"
+      "bannerTitle": "如何加入",
+      "introTitle": "加入 ISPAY，解锁无缝支付解决方案",
+      "s2Title": "第一步：下载TokenPocket钱包",
+      "s2Text": "Token Pocket 安卓版下载（Play 商店）：https://play.google.com/store/apps/details?id=vip.mytokenpocket TokenPocket iOS 版下载（App Store）：https://apps.apple.com/in/app/tokenpocket-crypto-bitcoin/id6444625622",
+      "s3Title": "TokenPocket 显示屏",
+      "s3Text": "",
+      "s4Title": "步骤 2. 选择您的 BNB 链网络",
+      "s4Text": "",
+      "s5Title": "步骤三：创建您的钱包",
+      "s5Text": "",
+      "s6Title": "第四步：选择“创建钱包”",
+      "s6Text": "",
+      "s7Title": "第五步：设置密码",
+      "s7Text": "",
+      "s8Title": "步骤 6. 选择所有选项并点击“生成助记符”",
+      "s8Text": "",
+      "s9Title": "第七步：保存你的秘密恢复短语",
+      "s9Text": "",
+      "s10Title": "步骤 8. 钱包创建成功",
+      "s10Text": "",
+      "s11Title": "如何在TokenPocket浏览器中打开ISPAY产品",
+      "s11Text": "",
+      "s12Title": "如何访问 ISPAY 卡控制面板",
+      "s12Text": "ISPAY卡仪表盘链接 www.ispaychain.com/?code=0x64b4Fcf5190Bbd48eB017c58B8a3091ab66F6281",
+      "s13Title": "如何访问 ISPAY 卡控制面板",
+      "s13Text": "",
+      "s14Title": "如何访问您的Ispay卡控制面板",
+      "s14Text": "",
+      "s15Title": "ISPAY 全球数字卡创建控制面板",
+      "s15Text": "",
+      "s16Title": "如何向您的ISPAY卡转账",
+      "s16Text": "",
+      "s17Title": "ISPAY 卡仪表盘",
+      "s17Text": "",
+      "s18Title": "如何访问 ISPAY 数字电子商务商城控制面板",
+      "s18Text": "ISPAY商城控制面板链接 https://mall.ispay.club/h5/#/?address=0xbc1a532895a65c8a5114294349342461f0eb65fb",
+      "s19Title": "如何访问 ISPAY 数字电子商务商城控制面板",
+      "s19Text": "",
+      "s20Title": "ISPAY 商城仪表盘",
+      "s20Text": "",
+      "s21Title": "探索 ISPAY 生态系统",
+      "s21Text": "",
+      "s22Title": "ISPAY 生态系统产品标识",
+      "s22Text": "",
+      "s23Title": "如何访问 ISPAY Web3 电子商务商城",
+      "s23Text": "进入ISPAY商城后，所有商品都按商品类别分类。点击任意类别即可浏览所有商品。选择您想要的产品，然后点击“立即购买”以完成订单。收货地址",
+      "s24Title": "进入ISPAY商城后，所有商品都按商品类别分类。点击任意类别即可浏览所有商品。",
+      "s24Text": "",
+      "s25Title": "选择您想要的产品，然后点击“立即购买”以完成订单。",
+      "s25Text": "",
+      "s26Title": "收货地址",
+      "s26Text": "",
+      "s27Title": "如何访问 ISPAY 数字水晶农场（游戏）",
+      "s27Text": "",
+      "s28Title": "如何访问 ISPAY 数字水晶农场（游戏）",
+      "s28Text": "",
+      "s29Title": "ISPAY 数字水晶农场（游戏）平台",
+      "s29Text": "",
+      "otherLinksTitle": "其他链接",
+      "ol1": "1- ISPay 区块链",
+      "ol2": "2- ISPay Exchange 下载链接",
+      "ol3": "3 – ISPAY钱包下载链接",
+      "ol4": "4 – 社交应用下载链接",
+      "ol5": "5 – ISPAY 全球汇款链接",
+      "ol6": "6 – ISPAY 质押链接"
     },
     "leadership": {
-      "title": "领导团队",
-      "body": "核心领导团队拥有来自 Google、Microsoft、Facebook 等全球科技企业的经验。"
+      "bannerTitle": "领导",
+      "heading": "认识我们成功背后的领导者",
+      "name": "马塞尔·贝莱斯（ISPAY 总裁）",
+      "p1": "世界第四大协议——BRC-20 不仅仅是一个技术里程碑，更是全球金融革命的基石。ISPay 正在构建全球首个协议级互操作生态系统，让数字资产能够在区块链之间安全、透明且大规模地自由流动。这是关键任务基础设施，旨在服务于实际应用，具备机构级可靠性，并实现全球普及。如今，我们拥有 700 万用户，未来将突破 2000 万，并在我的领导下不断壮大。",
+      "p2": "在我的领导下，ISPay 正触及世界各个角落，目标是在不久的将来赋能 2000 万用户，打造一个超越国界、文化和语言的金融生态系统。从亚洲到美洲，从欧洲到非洲，我们正在创造去中心化的赋能型金融工具的普适性，将用户参与转化为真正的价值。",
+      "p3": "在 ISPay，我们的领导团队是开拓者。我们推出了全球首个 ISPay 代币互换平台，实现了真正去中心化的多链原生交易；同时还推出了首个 ISPay 链上商城，将商业与金融完美融合，每笔交易都能带来全额返现、奖励和有意义的金融参与。",
+      "p4": "从 ISPay Social（社区和城市参与人数可超过百万）到 ISPay 钱包、交易所、游戏和挖矿，每一款产品都体现了我们的使命：赋能个人、助力企业发展、重塑全球金融。",
+      "p5": "这不仅仅是创新，更是一场重塑世界价值、治理和机遇互动方式的运动。ISPay 将日常行为、社交互动、商业活动、游戏和金融参与转化为真正的链上影响力。我们不等待未来，我们就是未来的轨道，携手并进，势不可挡。",
+      "p6": "我们的 ISPay 代币完全去中心化且合规，为这一生态系统提供动力，将社交、金融和商业活动转化为可衡量的影响。"
     },
     "resources": {
-      "title": "资源",
-      "body": "浏览文档、代币信息与合作伙伴链接，了解 ISPAY Chain 生态。"
+      "bannerTitle": "资源",
+      "pitchTitle": "下载 ISPAY 推介演示文稿文件",
+      "infraTitle": "ISPAY全球规模金融基础设施下载",
+      "farmTitle": "魔法水晶农场更新版下载",
+      "whitepaperTitle": "ISPAY 连锁白皮书更新下载",
+      "download": "下载"
     },
     "testimonial": {
-      "title": "用户评价",
-      "body": "用户与合作伙伴分享 ISPAY 卡片、汇款与 Web3 工具如何支持日常全球支付。"
+      "bannerTitle": "用户评价",
+      "heading": "客户评价",
+      "t1Title": "ISPAY 数字支付",
+      "t2Title": "ISPAY 游戏：玩法介绍",
+      "t3Title": "ISPAY虚拟卡流程",
+      "t4Title": "使用ISPAY卡提取现金"
     },
     "investmentPlan": {
-      "title": "投资计划",
-      "body": "了解 ISPAY 参与模式、生态效用与面向全球数字金融的长期基础设施规划。"
+      "bannerTitle": "投资计划",
+      "heading": "投资计划",
+      "i1Title": "虚拟卡收入水平",
+      "i2Title": "白卡收入水平",
+      "i3Title": "金卡收入等级",
+      "i4Title": "黑卡收入水平",
+      "i5Title": "预售 – 第二阶段",
+      "i6Title": "ISPAY商城特许经营模式",
+      "i7Title": "游戏盈利计划"
     }
   }
 }

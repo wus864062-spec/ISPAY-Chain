@@ -4,6 +4,7 @@ import { getMessages, getTranslations, setRequestLocale } from "next-intl/server
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import ScrollAnimateRegistry from "@/components/ScrollAnimate";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
@@ -45,6 +46,7 @@ export default async function LocaleLayout({ children, params }) {
     <html lang={locale} suppressHydrationWarning className={`${inter.variable} ${poppins.variable} h-full antialiased`}>
       <body className="min-h-full bg-white font-sans text-black">
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <ScrollAnimateRegistry />
           <Header />
           <main>{children}</main>
           <Footer />

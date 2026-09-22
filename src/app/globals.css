@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+:root {
+  --wp--preset--spacing--20: 20px;
+  --wp--preset--spacing--30: 30px;
+  --wp--preset--spacing--40: 40px;
+  --wp--preset--spacing--50: 50px;
+  --wp--preset--spacing--70: 70px;
+  --wp--preset--spacing--80: 80px;
+}
+
 @theme inline {
   --color-navy: #05085b;
   --color-gold: #efc62c;
@@ -12,6 +21,7 @@
 html,
 body {
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -43,40 +53,126 @@ body {
   );
 }
 
-.card-3d {
-  transform: perspective(1200px) rotateY(-10deg) rotateX(4deg);
-  filter: drop-shadow(0 28px 40px rgba(5, 8, 91, 0.28));
+/* === Hero Swiper 导航按钮 - 自定义 HTML 按钮（彻底避免 Swiper 默认 ›‹ FOUC） === */
+.hero-swiper-btn-prev {
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.hero-swiper-btn-next {
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.hero-swiper .swiper-button-prev,
-.hero-swiper .swiper-button-next {
-  width: 48px;
-  height: 48px;
-  border-radius: 999px;
-  background: #111;
-  color: #fff;
+@media (min-width: 768px) {
+  .hero-swiper-btn-prev { left: 16px; }
+  .hero-swiper-btn-next { right: 16px; }
+}
+@media (min-width: 1024px) {
+  .hero-swiper-btn-prev { left: 20px; }
+  .hero-swiper-btn-next { right: 20px; }
 }
 
-.hero-swiper .swiper-button-prev::after,
-.hero-swiper .swiper-button-next::after {
-  font-size: 16px;
-  font-weight: 700;
+/* ============================================================
+ * WOW.js 风格滚动触发动画系统（与 ispaychain.io 完全一致）
+ * 默认 animation-duration: 1s，offset: 80（距视口底部 80px 触发）
+ * ============================================================ */
+
+/* --- Keyframes（严格匹配 animate.css 标准） --- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translate3d(0, 40px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translate3d(0, -40px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translate3d(-40px, 0, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translate3d(40px, 0, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fadeInUpBig {
+  from { opacity: 0; transform: translate3d(0, 80px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fadeInDownBig {
+  from { opacity: 0; transform: translate3d(0, -80px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fadeInLeftBig {
+  from { opacity: 0; transform: translate3d(-80px, 0, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+@keyframes fadeInRightBig {
+  from { opacity: 0; transform: translate3d(80px, 0, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+/* animate.css zoomIn: 从 0.3 缩放，50% 时完全不透明 */
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+  50%  { opacity: 1; }
+  to   { opacity: 1; transform: scale3d(1, 1, 1); }
+}
+@keyframes zoomInUp {
+  from { opacity: 0; transform: scale3d(0.3, 0.3, 0.3) translate3d(0, 40px, 0); }
+  50%  { opacity: 1; }
+  to   { opacity: 1; transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
+}
+@keyframes zoomInDown {
+  from { opacity: 0; transform: scale3d(0.3, 0.3, 0.3) translate3d(0, -40px, 0); }
+  50%  { opacity: 1; }
+  to   { opacity: 1; transform: scale3d(1, 1, 1) translate3d(0, 0, 0); }
+}
+/* animate.css rollIn: 从 -100% 左侧 + -120deg 旋转滚入 */
+@keyframes rollIn {
+  from { opacity: 0; transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0) rotate3d(0, 0, 1, 0deg); }
+}
+@keyframes rotateIn {
+  from { opacity: 0; transform: rotate3d(0, 0, 1, -200deg); }
+  to   { opacity: 1; transform: none; }
 }
 
-.hero-swiper .swiper-pagination-bullet {
-  background: #05085b;
-  opacity: 0.3;
+/* --- 统一入口：所有带 [data-wow] 的元素初始隐藏 --- */
+[data-wow] {
+  opacity: 0;
+  will-change: transform, opacity;
 }
 
-.hero-swiper .swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #efc62c;
+/* Hero 首屏内的元素：不参与滚动动画，直接可见
+   （Swiper 切换 slide 时浏览器会重放 CSS animation，导致跳动画） */
+.main-slider [data-wow] {
+  opacity: 1 !important;
+  animation: none !important;
+  transform: none !important;
 }
 
-@media (max-width: 767px) {
-  .hero-swiper .swiper-button-prev,
-  .hero-swiper .swiper-button-next {
-    width: 36px;
-    height: 36px;
-  }
+/* --- .is-visible：由 ScrollAnimateRegistry 触发 --- */
+/* 默认时长 1s（与原始网站 WOW.js + animate.css 一致） */
+.is-visible[data-wow] {
+  animation-duration: var(--wow-duration, 1s);
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-delay: var(--wow-delay, 0ms);
+  animation-iteration-count: 1;  /* 只播一次，永不重放 */
 }
+
+/* 每种动画类型对应正确的 keyframes */
+.is-visible[data-wow="fadeInUp"]       { animation-name: fadeInUp; }
+.is-visible[data-wow="fadeInDown"]     { animation-name: fadeInDown; }
+.is-visible[data-wow="fadeInLeft"]     { animation-name: fadeInLeft; }
+.is-visible[data-wow="fadeInRight"]    { animation-name: fadeInRight; }
+.is-visible[data-wow="fadeInUpBig"]    { animation-name: fadeInUpBig; }
+.is-visible[data-wow="fadeInDownBig"]  { animation-name: fadeInDownBig; }
+.is-visible[data-wow="fadeInLeftBig"]  { animation-name: fadeInLeftBig; }
+.is-visible[data-wow="fadeInRightBig"] { animation-name: fadeInRightBig; }
+.is-visible[data-wow="zoomIn"]         { animation-name: zoomIn; }
+.is-visible[data-wow="zoomInUp"]       { animation-name: zoomInUp; }
+.is-visible[data-wow="zoomInDown"]     { animation-name: zoomInDown; }
+.is-visible[data-wow="rollIn"]         { animation-name: rollIn; }
+.is-visible[data-wow="rotateIn"]       { animation-name: rotateIn; }

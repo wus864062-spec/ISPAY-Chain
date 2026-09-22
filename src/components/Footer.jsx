@@ -1,10 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { contact, footerLinks, navItems, socials } from "@/data/site";
+import { footerLinks, navItems, socials } from "@/data/site";
 import { Link } from "@/i18n/navigation";
-import LanguageSwitcher from "./LanguageSwitcher";
 import SocialIcon from "./SocialIcon";
 
 export default function Footer() {
@@ -13,27 +11,21 @@ export default function Footer() {
 
   return (
     <footer className="bg-footer text-white">
-      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 lg:grid-cols-4">
-        <div>
-          <Link href="/" className="flex items-center gap-3">
-            <Image
-              src="/images/brand/logo.png"
-              alt="ISPAY Chain"
-              width={48}
-              height={48}
-              className="h-12 w-12 rounded-full object-cover"
-            />
-            <span className="font-heading text-xl font-bold uppercase">{t("brand")}</span>
+      <div className="mx-auto grid w-[80%] grid-cols-1 gap-10 px-4 py-10 text-center sm:py-14 md:grid-cols-3 md:gap-8 md:text-left lg:grid-cols-12 lg:py-16">
+        {/* 品牌栏 */}
+        <div className="lg:col-span-4">
+          <Link href="/" className="inline-flex items-center">
+            <span className="font-heading text-[28px] font-bold uppercase">{t("brand")}</span>
           </Link>
-          <p className="mt-4 text-sm leading-6 text-white/80">{t("tagline")}</p>
-          <div className="mt-5 flex flex-wrap gap-2">
+          <p className="mt-8 text-sm leading-7 text-white/80 sm:text-lg">{t("tagline")}</p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4 md:justify-start">
             {socials.map((item) => (
               <a
                 key={item.id}
                 href={item.href}
                 target="_blank"
                 rel="noreferrer"
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[#C12122]"
+                className="flex h-8 w-8 items-center justify-center rounded-full bg-white text-[#05085b]"
                 aria-label={item.id}
               >
                 <SocialIcon name={item.id} />
@@ -42,9 +34,10 @@ export default function Footer() {
           </div>
         </div>
 
-        <div>
-          <h3 className="text-lg font-semibold">{t("quickLinks")}</h3>
-          <ul className="mt-4 space-y-2 text-sm text-white/85">
+        {/* 快速链接栏 */}
+        <div className="lg:col-span-3">
+          <h3 className="text-[26px] font-bold">{t("quickLinks")}</h3>
+          <ul className="mt-8 space-y-3 text-lg text-white">
             {navItems.map((item) => (
               <li key={item.key}>
                 <Link href={item.href} className="hover:text-gold">
@@ -55,9 +48,10 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
-          <h3 className="text-lg font-semibold">{t("links")}</h3>
-          <ul className="mt-4 space-y-2 text-sm text-white/85">
+        {/* 链接栏 */}
+        <div className="lg:col-span-5">
+          <h3 className="text-[26px] font-bold">{t("links")}</h3>
+          <ul className="mt-8 space-y-3 text-lg text-white">
             {footerLinks.map((item) => (
               <li key={item.key}>
                 {item.internal ? (
@@ -73,18 +67,8 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-
-        <div className="space-y-4">
-          <a href={`mailto:${contact.email}`} className="block text-sm hover:text-gold">
-            {contact.email}
-          </a>
-          <a href={contact.phoneHref} className="block text-sm hover:text-gold">
-            {contact.phone}
-          </a>
-          <LanguageSwitcher variant="dark" />
-        </div>
       </div>
-      <div className="border-t border-white/10 py-5 text-center text-sm text-white/70">
+      <div className="border-t border-white/10 px-4 py-4 text-center text-xs text-white/70 sm:py-5 sm:text-base">
         {t("copyright")}
       </div>
     </footer>
