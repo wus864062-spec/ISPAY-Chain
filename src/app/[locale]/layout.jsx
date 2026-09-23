@@ -41,11 +41,18 @@ export default async function LocaleLayout({ children, params }) {
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  // Server-rendered page copy does not need to be sent again to client components.
+  const clientMessages = {
+    header: messages.header,
+    footer: messages.footer,
+    hero: messages.hero,
+    whatsapp: messages.whatsapp,
+  };
 
   return (
     <html lang={locale} suppressHydrationWarning className={`${inter.variable} ${poppins.variable} h-full antialiased`}>
       <body className="min-h-full bg-white font-sans text-black">
-        <NextIntlClientProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={clientMessages}>
           <ScrollAnimateRegistry />
           <Header />
           <main>{children}</main>

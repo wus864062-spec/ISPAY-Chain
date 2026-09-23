@@ -96,6 +96,7 @@
     }
   },
   "video": {
+    "play": "Play introduction video",
     "eyebrow": "DESIGNING THE FUTURE OF SECURE GLOBAL FINANCE",
     "title": "A Structural Shift in Global Finance",
     "p1": "Global financial systems are undergoing a structural transformation driven by digital settlement, real-time payments, enhanced transparency, and increased regulatory oversight.",

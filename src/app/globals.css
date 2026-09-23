@@ -138,41 +138,23 @@ body {
   to   { opacity: 1; transform: none; }
 }
 
-/* --- 统一入口：所有带 [data-wow] 的元素初始隐藏 --- */
+/* Content stays readable before JavaScript loads and when motion is disabled. */
 [data-wow] {
-  opacity: 0;
-  will-change: transform, opacity;
+  opacity: 1;
 }
 
-/* Hero 首屏内的元素：不参与滚动动画，直接可见
-   （Swiper 切换 slide 时浏览器会重放 CSS animation，导致跳动画） */
+@keyframes sectionReveal {
+  from { opacity: 0.85; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .is-visible[data-wow] {
+    animation: sectionReveal 300ms ease-out;
+  }
+}
+
 .main-slider [data-wow] {
-  opacity: 1 !important;
-  animation: none !important;
-  transform: none !important;
+  animation: none;
+  transform: none;
 }
-
-/* --- .is-visible：由 ScrollAnimateRegistry 触发 --- */
-/* 默认时长 1s（与原始网站 WOW.js + animate.css 一致） */
-.is-visible[data-wow] {
-  animation-duration: var(--wow-duration, 1s);
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
-  animation-delay: var(--wow-delay, 0ms);
-  animation-iteration-count: 1;  /* 只播一次，永不重放 */
-}
-
-/* 每种动画类型对应正确的 keyframes */
-.is-visible[data-wow="fadeInUp"]       { animation-name: fadeInUp; }
-.is-visible[data-wow="fadeInDown"]     { animation-name: fadeInDown; }
-.is-visible[data-wow="fadeInLeft"]     { animation-name: fadeInLeft; }
-.is-visible[data-wow="fadeInRight"]    { animation-name: fadeInRight; }
-.is-visible[data-wow="fadeInUpBig"]    { animation-name: fadeInUpBig; }
-.is-visible[data-wow="fadeInDownBig"]  { animation-name: fadeInDownBig; }
-.is-visible[data-wow="fadeInLeftBig"]  { animation-name: fadeInLeftBig; }
-.is-visible[data-wow="fadeInRightBig"] { animation-name: fadeInRightBig; }
-.is-visible[data-wow="zoomIn"]         { animation-name: zoomIn; }
-.is-visible[data-wow="zoomInUp"]       { animation-name: zoomInUp; }
-.is-visible[data-wow="zoomInDown"]     { animation-name: zoomInDown; }
-.is-visible[data-wow="rollIn"]         { animation-name: rollIn; }
-.is-visible[data-wow="rotateIn"]       { animation-name: rotateIn; }

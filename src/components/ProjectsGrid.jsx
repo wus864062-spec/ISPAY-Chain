@@ -20,13 +20,12 @@ export default async function ProjectsGrid() {
         }}
       >
         {/* 背景图 */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('/images/backgrounds/slider-bg.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
+        <Image
+          src="/images/backgrounds/slider-bg.png"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
         />
         {/* 90% 黑色遮罩 */}
         <div className="absolute inset-0 bg-black/90" />
@@ -71,13 +70,12 @@ export default async function ProjectsGrid() {
         }}
       >
         {/* 背景图 */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: "url('/images/backgrounds/slider-bg.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
+        <Image
+          src="/images/backgrounds/slider-bg.png"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
         />
         {/* 90% 黑色遮罩 */}
         <div className="absolute inset-0 bg-black/90" />

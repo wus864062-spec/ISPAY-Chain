@@ -18,6 +18,7 @@ export default async function Resources() {
                   {t(`${file.key}Heading`)}
                 </h2>
                 <iframe
+                  loading="lazy"
                   src={file.href}
                   title={t(`${file.key}Title`)}
                   className="mt-4 h-[480px] w-full border border-gray-200 sm:h-[620px] lg:h-[700px]"

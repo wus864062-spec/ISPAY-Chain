@@ -1,3 +1,5 @@
+import Image from "next/image";
+import DeferredVideo from "./DeferredVideo";
 import { getTranslations } from "next-intl/server";
 
 export default async function VideoSection() {
@@ -9,13 +11,10 @@ export default async function VideoSection() {
         <div className="mx-auto w-[80%] px-4">
           {/* 视频 - 移到板块上方 - wow fadeInRight */}
           <div data-wow="fadeInRight" data-delay="200" className="overflow-hidden rounded-xl bg-black shadow-2xl sm:rounded-2xl">
-            <video
-              className="aspect-[848/480] w-full"
-              controls
-              loop
-              playsInline
-              poster="/images/backgrounds/statistic.gif"
+            <DeferredVideo
+              poster="/images/backgrounds/intro-poster.webp"
               src="/videos/intro.mp4"
+              playLabel={t("play")}
             />
           </div>
 
@@ -31,9 +30,12 @@ export default async function VideoSection() {
           <div className="mt-8 grid items-start gap-8 sm:mt-14 sm:gap-10 lg:grid-cols-2 lg:gap-12">
             {/* 左图 - wow fadeInDown */}
             <div data-wow="fadeInDown">
-              <img
-                src="/images/projects/gold-card.jpg"
+              <Image
+                src="/images/projects/gold-card.webp"
                 alt=""
+                width={1024}
+                height={1024}
+                sizes="(max-width: 1023px) 80vw, 40vw"
                 className="h-auto w-full"
               />
             </div>

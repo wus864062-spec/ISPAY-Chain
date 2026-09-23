@@ -19,7 +19,7 @@ export default function HeroSwiper() {
             src="/images/backgrounds/slider-bg.png"
             alt=""
             fill
-            priority
+            loading="eager"
             sizes="100vw"
             className="object-cover"
           />
@@ -92,7 +92,10 @@ export default function HeroSwiper() {
                           ? "h-auto w-[min(100%,220px)] object-contain sm:w-[min(100%,280px)] lg:w-[min(100%,360px)]"
                           : "h-auto max-h-[180px] w-auto object-contain sm:max-h-[240px] lg:max-h-[360px]"
                       }
-                      priority={index === 0}
+                      preload={index === 0}
+                      sizes={slide.contain
+                        ? "(max-width: 639px) 220px, (max-width: 1023px) 280px, 360px"
+                        : "(max-width: 639px) 128px, (max-width: 1023px) 170px, 255px"}
                     />
                   </div>
                 </div>

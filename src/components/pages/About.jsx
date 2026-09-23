@@ -1,4 +1,9 @@
-﻿﻿import { getTranslations } from "next-intl/server";
+import Image from "next/image";
+import goalsImage from "../../../public/images/pages/20_ispay1.png";
+import coreImage from "../../../public/images/pages/core.png";
+import activitiesImage from "../../../public/images/pages/ispay-activities.jpeg";
+import cardsImage from "../../../public/images/pages/ispay-cards.png";
+import { getTranslations } from "next-intl/server";
 import InnerBanner from "./InnerBanner";
 
 /* 关于我们页：按原始网站 5 个板块编排（目标 / 核心原则 / 想象 / 使命 / 全球汇款技术简报） */
@@ -16,7 +21,7 @@ export default async function About() {
           {/* 板块1：关于我们（目标）—— 左图右文双栏 */}
           <div className="flex flex-col items-start gap-6 sm:gap-8 lg:flex-row lg:items-center lg:gap-14">
             <div className="w-full lg:w-[34%] lg:shrink-0">
-              <img src="/images/pages/20_ispay1.png" alt="" className="w-full rounded-[16px] max-h-[280px] sm:max-h-[360px] md:max-h-[420px] lg:max-h-none object-contain" />
+              <Image src={goalsImage} sizes="(max-width: 1023px) 90vw, 420px" alt="" className="w-full rounded-[16px] max-h-[280px] sm:max-h-[360px] md:max-h-[420px] lg:max-h-none object-contain" />
             </div>
             <div className="w-full lg:flex-1">
               <h2 className="font-heading text-[22px] font-bold text-black sm:text-[26px] md:text-[30px]">{t("goalsTitle")}</h2>
@@ -34,7 +39,7 @@ export default async function About() {
             <h2 className="text-center font-heading text-[22px] font-bold text-black sm:text-[26px] md:text-[30px]">{t("principlesTitle")}</h2>
             <div className="mt-8 flex flex-col items-start gap-6 sm:gap-8 lg:flex-row lg:items-center lg:gap-14">
               <div className="w-full lg:w-[33%] lg:shrink-0">
-                <img src="/images/pages/core.png" alt="" className="w-full rounded-[16px] max-h-[280px] sm:max-h-[360px] md:max-h-[420px] lg:max-h-none object-contain" />
+                <Image src={coreImage} sizes="(max-width: 1023px) 90vw, 380px" alt="" className="w-full rounded-[16px] max-h-[280px] sm:max-h-[360px] md:max-h-[420px] lg:max-h-none object-contain" />
               </div>
               <div className="w-full lg:flex-1">
                 <p className="text-[15px] leading-7 text-secondary sm:text-base sm:leading-8 md:text-lg">{t("principlesIntro")}</p>
@@ -63,13 +68,13 @@ export default async function About() {
 
           {/* 板块3+4下方：ISPAY Activities 宽幅图 */}
           <div className="mt-12 sm:mt-16 md:mt-20">
-            <img src="/images/pages/ispay-activities.jpeg" alt="ISPAY Activities" className="w-full rounded-[16px] max-h-[300px] sm:max-h-[400px] md:max-h-[500px] lg:max-h-none object-cover" />
+            <Image src={activitiesImage} sizes="(max-width: 1279px) 90vw, 1200px" alt="ISPAY Activities" className="w-full rounded-[16px] max-h-[300px] sm:max-h-[400px] md:max-h-[500px] lg:max-h-none object-cover" />
           </div>
 
           {/* 板块5：ISPAY 全球汇款技术简报 —— 左图右文双栏 */}
           <div className="mt-12 sm:mt-16 md:mt-20 flex flex-col items-start gap-8 sm:gap-10 lg:flex-row lg:items-start lg:gap-14">
             <div className="w-full lg:w-[42%] lg:shrink-0 md:pt-10">
-              <img src="/images/pages/ispay-cards.png" alt="ISPAY Global Remittance" className="w-full max-h-[300px] sm:max-h-[400px] md:max-h-[480px] lg:max-h-none object-contain" />
+              <Image src={cardsImage} sizes="(max-width: 1023px) 90vw, 510px" alt="ISPAY Global Remittance" className="w-full max-h-[300px] sm:max-h-[400px] md:max-h-[480px] lg:max-h-none object-contain" />
             </div>
             <div className="w-full lg:flex-1">
               <h2 className="font-heading text-[22px] font-bold text-black sm:text-[26px] md:text-[30px]">{t("remittanceTitle")}</h2>

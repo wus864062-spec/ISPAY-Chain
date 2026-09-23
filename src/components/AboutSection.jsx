@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
@@ -11,11 +12,12 @@ export default async function AboutSection() {
           {/* 左图 - 原始网站 wow fadeInDown */}
           <div data-wow="fadeInDown" className="w-full max-w-[260px] sm:max-w-[320px] lg:max-w-[386px]">
             <div className="aspect-[386/692] w-full overflow-hidden rounded-[20px] sm:rounded-[28px]">
-              <img
-                src="/images/projects/social-med.jpg"
+              <Image
+                src="/images/projects/social-med.webp"
                 alt={t("title")}
                 width={386}
                 height={692}
+                sizes="(max-width: 639px) 260px, (max-width: 1023px) 320px, 386px"
                 className="h-full w-full object-cover"
               />
             </div>
@@ -43,9 +45,12 @@ export default async function AboutSection() {
 
         {/* 板块下方图片 */}
         <div className="mx-auto mt-10 w-[80%] px-4 sm:mt-12">
-          <img
-            src="/images/projects/about-extra.jpeg?v=2"
+          <Image
+            src="/images/projects/about-extra.webp"
             alt=""
+            width={1535}
+            height={263}
+            sizes="64vw"
             className="mx-auto block h-auto w-[80%] rounded-[20px]"
           />
         </div>
