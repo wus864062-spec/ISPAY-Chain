@@ -166,11 +166,18 @@ export const footerLinks = [
 /* ===== 内页数据（按原始网站各页面编排）===== */
 
 /* 内页 banner 背景图（原始网站统一城市图） */
-export const innerBannerImage = "/images/pages/pl1.png";
+export const innerBannerImage = "/images/pages/19_aboutus.png";
 
 /* how-to-join 步骤板块：t 为 i18n 键前缀（pages.howToJoin.{t}Title / {t}Text），image 为 public 相对路径 */
 export const howToJoinSteps = [
-  { t: "s2", image: "/images/pages/token.png" },
+  {
+    t: "s2",
+    image: "/images/pages/token.png",
+    plainImage: true,
+    downloadLinks: true,
+    androidUrl: "https://play.google.com/store/apps/details?id=vip.mytokenpocket",
+    iosUrl: "https://apps.apple.com/in/app/tokenpocket-crypto-bitcoin/id6444625622",
+  },
   { t: "s3", image: "/images/pages/diplay.jpg" },
   { t: "s4", image: "/images/pages/BNB-chain.png" },
   { t: "s5", image: "/images/pages/create-wallet.png" },
@@ -210,20 +217,20 @@ export const howToJoinOtherLinks = [
   { key: "ol6", href: "https://mall.ispay.club/h5/#/?address=0xbc1a532895a65c8a5114294349342461f0eb65fb" },
 ];
 
-/* resources 下载文件（原始网站真实 PDF 链接） */
+/* resources 下载文件（本地 PDF：/files 目录） */
 export const resourceFiles = [
-  { key: "pitch", href: "https://ispaychain.io/wp-content/uploads/2026/04/ISPAY-Pitch-Deck-Updated-Version-.pdf" },
-  { key: "infra", href: "https://ispaychain.io/wp-content/uploads/2026/03/ISPAY-Global-Scale-Financial-Infrastructure-1.pdf" },
-  { key: "farm", href: "https://ispaychain.io/wp-content/uploads/2026/04/Magical-Crystal-Farm-Updated-1.pdf-1-1.pdf-1.pdf" },
-  { key: "whitepaper", href: "https://ispaychain.io/wp-content/uploads/2026/03/ISPAY-Chain-White-Paper-Updated.pdf" },
+  { key: "pitch", href: "/files/pitch-deck.pdf" },
+  { key: "infra", href: "/files/global-infrastructure.pdf" },
+  { key: "farm", href: "/files/crystal-farm.pdf" },
+  { key: "whitepaper", href: "/files/white-paper.pdf" },
 ];
 
-/* testimonial 评价板块（标题 i18n：pages.testimonial.{key}） */
+/* testimonial 评价板块（标题 i18n：pages.testimonial.{key}；poster 视频封面，video 视频源） */
 export const testimonialItems = [
-  { key: "t1", image: "/images/pages/White.png" },
-  { key: "t2", image: "/images/pages/Game1.png" },
-  { key: "t3", image: "/images/pages/Virtual-Card.png" },
-  { key: "t4", image: "/images/pages/flag.jpg" },
+  { key: "t1", poster: "/images/pages/white-poster.png", video: "/videos/t1-white.mp4" },
+  { key: "t2", poster: "/images/pages/game-poster.png", video: "/videos/t2-game.mp4" },
+  { key: "t3", poster: "/images/pages/virtual-poster.png", video: "/videos/t3-virtual.mp4" },
+  { key: "t4", poster: "/images/pages/flag-poster.jpg", video: "/videos/t4-flag.mp4" },
 ];
 
 /* investment-plan 收入计划板块（标题 i18n：pages.investmentPlan.{key}） */

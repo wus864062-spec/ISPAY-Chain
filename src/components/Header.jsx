@@ -2,14 +2,68 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { contact, navItems, socials } from "@/data/site";
-import { Link } from "@/i18n/navigation";
 import LanguageSwitcher from "./LanguageSwitcher";
 import SocialIcon from "./SocialIcon";
 
+/* 根据 href 拼语言前缀：首页 => /${locale}，其他页 => /${locale}${href} */
+function localeHref(locale, href) {
+  return href === "/" ? `/${locale}` : `/${locale}${href}`;
+}
+
+/* 首页链接用 replace（不新增历史），其他用默认 push（新增历史） */
+function HomeLink({ href, onClick, children, className }) {
+  return (
+    <a
+      href={href}
+      className={className}
+      onClick={(e) => {
+        e.preventDefault();
+        window.location.replace(href);
+        onClick?.();
+      }}
+    >
+      {children}
+    </a>
+  );
+}
+
+/* 普通导航链接：新开标签页打开，保留当前页 */
+function NavLink({ href, onClick, children, className }) {
+  return (
+    <a
+      href={href}
+      className={className}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={onClick}
+    >
+      {children}
+    </a>
+  );
+}
+
+/* 根据 item 是否首页，渲染对应 Link 组件 */
+function SmartNavLink({ item, locale, onClick, children, className }) {
+  const href = localeHref(locale, item.href);
+  if (item.href === "/") {
+    return (
+      <HomeLink href={href} onClick={onClick} className={className}>
+        {children}
+      </HomeLink>
+    );
+  }
+  return (
+    <NavLink href={href} onClick={onClick} className={className}>
+      {children}
+    </NavLink>
+  );
+}
+
 export default function Header() {
   const t = useTranslations("header");
+  const locale = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
 
   /* 目录打开时锁定背景滚动 */
@@ -62,7 +116,11 @@ export default function Header() {
 
       {/* menu-header - 原始网站 wow fadeInDown */}
       <div data-wow="fadeInDown" data-delay="150" className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 pt-8 pb-10 lg:flex-row lg:justify-between lg:gap-6 lg:py-5">
-        <Link href="/" className="flex items-center gap-10 sm:gap-3">
+        <SmartNavLink
+          item={{ href: "/" }}
+          locale={locale}
+          className="flex items-center gap-10 sm:gap-3"
+        >
           <Image
             src="/images/brand/logo.png"
             alt={t("brand")}
@@ -74,13 +132,13 @@ export default function Header() {
           <span className="font-heading text-[28px] font-bold text-black">
             {t("brand")}
           </span>
-        </Link>
+        </SmartNavLink>
 
         <nav className="hidden flex-wrap items-center justify-center gap-x-3 gap-y-2 text-[13px] font-semibold text-black sm:gap-x-5 sm:text-[15px] lg:flex lg:text-base">
           {navItems.map((item) => (
-            <Link key={item.key} href={item.href} className="hover:text-navy">
+            <SmartNavLink key={item.key} item={item} locale={locale} className="hover:text-navy">
               {t(item.key)}
-            </Link>
+            </SmartNavLink>
           ))}
         </nav>
 
@@ -112,14 +170,15 @@ export default function Header() {
           </button>
           <nav className="flex flex-col items-start gap-[22px] px-8 pt-24 pb-10 text-lg font-semibold text-black">
             {navItems.map((item) => (
-              <Link
+              <SmartNavLink
                 key={item.key}
-                href={item.href}
+                item={item}
+                locale={locale}
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-navy"
               >
                 {t(item.key)}
-              </Link>
+              </SmartNavLink>
             ))}
           </nav>
         </div>

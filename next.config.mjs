@@ -10,6 +10,7 @@ const nextConfig = {
   turbopack: {
     root: projectRoot,
   },
+  devIndicators: false,
   images: {
     localPatterns: [
       {

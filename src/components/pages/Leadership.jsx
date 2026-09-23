@@ -9,24 +9,35 @@ export default async function Leadership() {
   return (
     <>
       <InnerBanner namespace="pages.leadership" />
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
-        <div className="mx-auto max-w-4xl px-4">
-          <h2 data-wow="fadeInUp" className="font-heading text-[24px] font-bold text-black sm:text-[28px]">
+      <section className="bg-white py-6 sm:py-10 lg:py-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
+          <h2 className="text-center font-heading text-[16px] font-bold text-black sm:text-[18px] md:text-[22px]">
             {t("heading")}
           </h2>
-          <img
-            data-wow="fadeInUp"
-            src="/images/pages/Mam.jpeg"
-            alt={t("name")}
-            className="mx-auto mt-8 w-full max-w-md rounded-[16px]"
-          />
-          <h3 data-wow="fadeInUp" className="mt-6 text-center font-heading text-[20px] font-bold text-black sm:text-[24px]">
-            {t("name")}
-          </h3>
-          <div data-wow="fadeInUp" className="mt-8 space-y-4 text-base leading-7 text-secondary sm:space-y-5 sm:text-lg sm:leading-8">
-            {paragraphs.map((key) => (
-              <p key={key}>{t(key)}</p>
-            ))}
+
+          {/* 左图右文双栏 */}
+          <div className="mt-4 sm:mt-6 flex flex-col items-start gap-4 sm:gap-6 lg:flex-row lg:items-start lg:gap-2">
+            {/* 左：总裁照片 */}
+            <div className="w-full lg:w-[50%] lg:shrink-0">
+              <img
+                src="/images/pages/Mam.jpeg"
+                alt={t("name")}
+                style={{ borderRadius: "24px" }}
+                className="h-auto w-full object-cover lg:h-[560px] lg:w-auto lg:max-w-full"
+              />
+            </div>
+
+            {/* 右：姓名 + 职务 + 长文 */}
+            <div className="w-full lg:flex-1">
+              <h3 className="font-heading text-[18px] font-bold text-black sm:text-[20px] md:text-[24px]">
+                {t("name")}
+              </h3>
+              <div className="mt-2 max-w-[40em] space-y-1 text-[13px] leading-[1.65] text-black sm:space-y-1.5 sm:text-[14px] sm:leading-[1.7] md:text-[15px]">
+                {paragraphs.map((key) => (
+                  <p key={key}>{t(key)}</p>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
