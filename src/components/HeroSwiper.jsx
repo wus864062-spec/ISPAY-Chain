@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { useRef } from "react";
 import { useTranslations } from "next-intl";
 import { heroSlides } from "@/data/site";
 import { Link } from "@/i18n/navigation";
@@ -12,8 +11,6 @@ import "swiper/css/navigation";
 
 export default function HeroSwiper() {
   const t = useTranslations("hero");
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
 
   return (
     <section className="main-slider relative overflow-hidden">
@@ -42,10 +39,9 @@ export default function HeroSwiper() {
             spaceBetween={30}
             slidesPerView={1}
             autoplay={{ delay: 3000, disableOnInteraction: false }}
-            navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
-            onBeforeInit={(swiper) => {
-              swiper.params.navigation.prevEl = prevRef.current;
-              swiper.params.navigation.nextEl = nextRef.current;
+            navigation={{
+              prevEl: ".hero-swiper-btn-prev",
+              nextEl: ".hero-swiper-btn-next",
             }}
             className="hero-swiper sliderrr-div relative z-[2] mx-auto w-full lg:w-[80%]"
           >
@@ -106,14 +102,12 @@ export default function HeroSwiper() {
 
           {/* 自定义左右箭头按钮 - 纯黑圆形 + 白色V形，彻底避免 Swiper 默认 ›‹ 字符 FOUC */}
           <button
-            ref={prevRef}
             aria-label="Previous"
             className="hero-swiper-btn hero-swiper-btn-prev absolute z-[5] flex h-[44px] w-[44px] items-center justify-center rounded-full bg-black shadow-[0_2px_8px_rgba(0,0,0,0.3)] transition hover:bg-navy sm:h-[48px] sm:w-[48px]"
           >
             <span className="-translate-y-[1px] translate-x-[1px] rotate-45 border-l-[2px] border-b-[2px] border-white w-[8px] h-[8px]" />
           </button>
           <button
-            ref={nextRef}
             aria-label="Next"
             className="hero-swiper-btn hero-swiper-btn-next absolute z-[5] flex h-[44px] w-[44px] items-center justify-center rounded-full bg-black shadow-[0_2px_8px_rgba(0,0,0,0.3)] transition hover:bg-navy sm:h-[48px] sm:w-[48px]"
           >

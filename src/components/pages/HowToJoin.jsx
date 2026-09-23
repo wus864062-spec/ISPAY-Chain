@@ -77,7 +77,33 @@ export default async function HowToJoin() {
                     {t(`${step.t}Title`)}
                   </h3>
                   <p className="mt-4 break-all text-center text-base leading-7 text-secondary sm:text-lg sm:leading-8">
-                    {t(`${step.t}Text`)}
+                  {/* 文本末尾带链接时：链接单独一行显示；支持 \n 多行（如 s27 农场链接 + 邀请码） */}
+                  {(() => {
+                    const text = t(`${step.t}Text`);
+                    return text.split("\n").map((line, lineIdx) => {
+                      const match = line.match(/^([\s\S]*?)(https?:\/\/\S+)$/);
+                      return (
+                        <span key={lineIdx} className="block">
+                          {match ? (
+                            <>
+                              {match[1].trim()}
+                              <br />
+                              <a
+                                href={match[2]}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-navy underline hover:text-gold"
+                              >
+                                {match[2]}
+                              </a>
+                            </>
+                          ) : (
+                            line
+                          )}
+                        </span>
+                      );
+                    });
+                  })()}
                   </p>
                   <ZoomableImage
                     src={step.image}

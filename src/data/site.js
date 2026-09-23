@@ -105,10 +105,10 @@ export const locales = [
 ];
 
 export const contact = {
-  email: "info@ispaychain.io",
-  phone: "+971 568697314",
-  phoneHref: "tel:+971568697314",
-  whatsapp: "https://wa.me/971568697314",
+  email: "xiaorongwu943@gmail.com",
+  phone: "+971 529870521",
+  phoneHref: "tel:+971529870521",
+  whatsapp: "https://wa.me/971529870521",
 };
 
 export const socials = [
